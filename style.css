@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+    --black: #000;
+    --white: #fff;
+    --cyan: #AEDEE0;
+    --salmon: #EE9D71;
+    --machina: 'Pp_Neue_Machina';
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+*::selection{
+    background-color: rgb(248, 155, 144);
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+body[theme = 'black']{
+    background-color: var(--black);
+}
+body[theme = 'black'] .section{
+    color: var(--white);
+}
+body[theme = 'cyan'] {
+    background-color: var(--cyan);
+}
+body[theme = 'cyan'] .section{
+    color: var(--black);
+}
+body[theme = 'salmon']{
+    background-color: var(--salmon);
+}
+body[theme = 'salmon'] .section{
+    color: var(--black);
+}
+body[theme = 'white']{
+    background-color: var(--white);
+}
+body[theme = 'white'] .section{
+    color: var(--black);
+}
