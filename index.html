@@ -8,11 +8,12 @@
     <link href="output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body theme="white">
+  <body theme="black">
     <main class="main w-full">
       <section class="home w-full h-screen relative overflow-hidden">
         <div
-          class="hidden videocontainer w-full h-screen absolute top-0 left-0 overflow-hidden z-[3]"
+          style="--clip: 100%"
+          class="videocontainer w-full h-screen absolute top-0 left-0 overflow-hidden z-[3]"
         >
           <video
             autoplay
@@ -25,9 +26,9 @@
         <div
           class="marqueecontainer w-full h-screen relative flex justify-center items-center overflow-hidden"
         >
-          <div class="w-[100%] h-[50vh bg-re">
+          <div class="pinning scale-[1] w-[100%] h-[50vh bg-re">
             <div
-              class="heading section absolute top-[10%] left-[50%] -translate-x-[50%] text-center"
+              class="heading section absolute -top-[20%] left-[50%] -translate-x-[50%] text-center"
             >
               <h1 class="text-3xl font-thin font-['Satoshi_Variable']">
                 Crafting a new paradigm of
@@ -38,8 +39,7 @@
               <!-- <h1 class="text-3xl font-thin font-['Satoshi_Variable']">Crafting a new paradigm of healthcare, one that is</h1> -->
             </div>
 
-            <div
-              class="hero-rows w-full py-6 bg-re font-['Pp_Neue_Machina'] font-bold flex items-center gap-5 -translate-x-[6rem]"
+            <div class="hero-rows lft w-full py-6 bg-re font-['Pp_Neue_Machina'] font-bold flex items-center gap-5 -translate-x-[6rem]"
             >
               <div class="hero-line section flex items-center gap-8">
                 <h1 class="text-7xl">emphathetic</h1>
@@ -85,8 +85,7 @@
                 <h1 class="text-7xl">emphathetic</h1>
               </div>
             </div>
-            <div
-              class="hero-rows w-full py-6 bg-re font-['Pp_Neue_Machina'] font-bold flex items-center gap-5 -translate-x-[rem]"
+            <div class="hero-rows rgt w-full py-6 bg-re font-['Pp_Neue_Machina'] font-bold flex items-center gap-5 -translate-x-[rem]"
             >
               <div class="hero-line section flex items-center gap-8">
                 <h1 class="text-7xl">emphathetic</h1>
@@ -113,8 +112,7 @@
                 <h1 class="text-7xl">emphathetic</h1>
               </div>
             </div>
-            <div
-              class="hero-rows w-full py-6 bg-re font-['Pp_Neue_Machina'] font-bold flex items-center gap-5 -translate-x-[6rem]"
+            <div class="hero-rows lft w-full py-6 bg-re font-['Pp_Neue_Machina'] font-bold flex items-center gap-5 -translate-x-[6rem]"
             >
               <div class="hero-line section flex items-center gap-8">
                 <h1 class="text-7xl">emphathetic</h1>
@@ -148,8 +146,7 @@
                 <h1 class="text-7xl">emphathetic</h1>
               </div>
             </div>
-            <div
-              class="hero-rows w-full py-6 bg-re font-['Pp_Neue_Machina'] font-bold flex items-center gap-5 -translate-x-[rem]"
+            <div class="hero-rows rgt w-full py-6 bg-re font-['Pp_Neue_Machina'] font-bold flex items-center gap-5 -translate-x-[rem]"
             >
               <div class="hero-line section flex items-center gap-8">
                 <h1 class="text-7xl">emphathetic</h1>
@@ -187,7 +184,9 @@
         </div>
       </section>
 
-      <section class="craft section t w-full flex px-10 py-40 justify-between items-start gap-10 relative">
+      <section
+        class="craft section t w-full flex px-10 py-40 justify-between items-start gap-10 relative"
+      >
         <div class="text section w-[40%] sticky top-20 left-0">
           <h6
             class="text-xl font-['Satoshi_Variable'] font-thin leading-normal mb-10"
@@ -199,7 +198,7 @@
           </h6>
 
           <h1
-            class="text-7xl font-thin font-['Pp_Neue_Machina']  leading-tight mb-10"
+            class="text-7xl font-thin font-['Pp_Neue_Machina'] leading-tight mb-10"
           >
             We Craft Human-Centric Health Software
           </h1>
@@ -436,8 +435,8 @@
         </div>
       </section>
 
-      <section class="talk section h-screen w-full relative mb-[15rem]">
-        <div class="containerr h-[100vh] w-[400vw] relative">
+      <section class="talk section h-screen w-full relative mb-[15rem] overflow-hidden">
+        <div class="containerr h-[100vh] w-[390vw] relative overflow-hidden">
           <div class="slides sticky top-0 left-0 flex w-full h-screen">
             <div
               class="slide h-screen w-[100vw] flex justify-center items-center overflow-hidden"
@@ -446,13 +445,15 @@
                 <h1 class="text-[7rem] leading-none capitalize">real talk,</h1>
                 <h1 class="text-[7rem] leading-none capitalize">real impact</h1>
               </div>
-              <div class="w-fit px-14 py-4 border-[1px] border-[--black] absolute bottom-[7%] left-[1%] bg-[#F4F19C] ">
+              <div 
+                class="w-fit px-14 py-4 border-[1px] border-[--black] absolute bottom-[7%] left-[1%]  bg-[#F4F19C]"
+              >
                 <span class="text-lg uppercase font-['Satoshi_Variable']"
                   >Partner With Us</span
                 >
               </div>
               <div
-                class="img h-[35vh] w-[35vh] rounded-full bg-black absolute left-[22%] bottom-[40%] overflow-hidden"
+                class="img h-[35vh] w-[35vh] rounded-full bg-black  left-[22%] bottom-[40%] overflow-hidden"
               >
                 <img
                   src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ed8426a9be08870acb09_1.jpg"
@@ -460,7 +461,9 @@
                 />
               </div>
             </div>
-            <div class="slide h-screen section w-[100vw] flex justify-center items-center relative overflow-hidden">
+            <div
+              class="slide h-screen section w-[100vw] flex justify-center items-center relative overflow-"
+            >
               <div class="text flex flex-col items-center">
                 <h1
                   class="text-[10rem] font-['pp_neue_machina'] font-bold text-white"
@@ -473,175 +476,296 @@
                   Real people — real lives — we have <br />
                   built products and solutions for.
                 </h1>
-                <h6 class="absolute top-[25%] left-[17%] text-xl font-['satoshi_variable'] font-medium">
+                <h6
+                  class="absolute top-[25%] left-[17%] text-xl font-['satoshi_variable'] font-medium"
+                >
                   We’re on a mission to impact as <br />
                   many lives as possible and build <br />
                   a better company while we do it. <br />
                   Here’s our progress.
                 </h6>
                 <div
-                class="img h-[30vh] w-[30vh] rounded-full bg-black absolute left-[40%] -top-[12%] overflow-hidden"
+                  class="img h-[30vh] w-[30vh] rounded-full bg-black absolute left-[40%] -top-[12%] overflow-hidden"
+                >
+                  <img
+                    src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9edd08cc0ac13ed6995bd_4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="img z-10 absolute h-[40vh] w-[40vh] rounded-full bg-black  -right-[5%] top-[30%] overflow-hidden"
+                >
+                  <img
+                    src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ee2e5e80fe8ace7a1ff3_5.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="img h-[40vh] w-[40vh] rounded-full bg-black absolute right-[35%] -bottom-[15%] overflow-hidden"
+                >
+                  <img
+                    src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ee19cb5203ee12c21ba3_3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="img h-[20vh] w-[20vh] rounded-full bg-black absolute left-[20%] bottom-[5%] overflow-hidden"
+                >
+                  <img
+                    src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9edafe67e88c12db2d78b_2.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide h-screen section w-[100vw] flex justify-center items-center relative overflow-hidden"
+            >
+              <div class="text flex flex-col items-center">
+                <h1
+                  class="text-[10rem] text-white font-['pp_neue_machina'] font-bold"
+                >
+                  49%
+                </h1>
+                <h1 class="text-5xl font-['pp_neue_machina'] -mt-[3rem]">
+                  Expert Women in Tech.
+                </h1>
+                <h6
+                  class="text-xl absolute top-[30%] left-[15%] font-['satoshi_variable']"
+                >
+                  Our team is global and diverse,<br />
+                  because our individual <br />
+                  experiences make us stronger.
+                </h6>
+              </div>
+              <div
+                class="img absolute w-[35vh] h-[35vh] -top-[8%] left-[50%] -translate-x-[50%]"
               >
                 <img
-                  src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9edd08cc0ac13ed6995bd_4.jpg"
+                  class="w-full"
+                  src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65ea1b924ee31caf14d64b2a_TreeStructure.png"
                   alt=""
                 />
               </div>
               <div
-              class="img h-[40vh] w-[40vh] rounded-full bg-black absolute -right-[5%] top-[30%] overflow-hidden"
-            >
-              <img
-                src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ee2e5e80fe8ace7a1ff3_5.jpg"
-                alt=""
-              />
-            </div>
-            <div
-            class="img h-[40vh] w-[40vh] rounded-full bg-black absolute right-[35%] -bottom-[15%] overflow-hidden"
-          >
-            <img
-              src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ee19cb5203ee12c21ba3_3.jpg"
-              alt=""
-            />
-          </div>
-          <div
-          class="img h-[20vh] w-[20vh] rounded-full bg-black absolute left-[20%] bottom-[5%] overflow-hidden"
-        >
-          <img
-            src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9edafe67e88c12db2d78b_2.jpg"
-            alt=""
-          />
-        </div>
-              </div>
-            </div>
-            <div class="slide h-screen section w-[100vw] flex justify-center items-center relative overflow-hidden">
-              <div class="text flex flex-col items-center">
-                <h1 class="text-[10rem] text-white font-['pp_neue_machina'] font-bold">49%</h1>
-                <h1 class="text-5xl  font-['pp_neue_machina'] -mt-[3rem]">Expert Women in Tech.</h1>
-                <h6 class="text-xl absolute top-[30%] left-[15%] font-['satoshi_variable']">Our team is global and diverse,<br> because our individual <br> experiences make us stronger.</h6>
-              </div>
-              <div class="img absolute w-[35vh] h-[35vh] -top-[8%] left-[50%] -translate-x-[50%]">
-                <img class="w-full  " src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65ea1b924ee31caf14d64b2a_TreeStructure.png" alt="">
-              </div>
-              <div class="img absolute w-[35vh] h-[35vh] -bottom-[8%] left-[35%] -translate-x-[50%]">
-                <img class="w-full  " src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65ea1b841fcd9f50115dbe9c_RocketLaunch.png" alt="">
-              </div>
-              <div class="img absolute w-[35vh] h-[35vh] bottom-[30%] -right-[4%] ">
-                <img class="w-full  " src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65ea1ba6eb9637155282b42f_Lightning.png" alt="">
-              </div>
-            </div>
-            <div class="slide h-screen w-[100vw]  flex justify-center items-center relative overflow-hidden">
-              <div class="text flex flex-col items-center text-center">
-                <h1 class="font-['pp_neue_machina'] font-bold text-white text-[10rem]">13</h1>
-                <h1 class="text-5xl font-['pp_neue_machina'] font-bold -mt-[3rem]">Nationalities Represented on Our <br> Team.</h1>
+                class="img absolute w-[35vh] h-[35vh] -bottom-[8%] left-[35%] -translate-x-[50%]"
+              >
+                <img
+                  class="w-full"
+                  src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65ea1b841fcd9f50115dbe9c_RocketLaunch.png"
+                  alt=""
+                />
               </div>
               <div
-              class="img h-[25vh] w-[25vh] rounded-full bg-black absolute left-[20%] -top-[4%] overflow-hidden"
-            >
-              <img
-                src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ef82bb0daca6843ce305_7.jpg"
-                alt=""
-              />
+                class="img absolute w-[35vh] h-[35vh] bottom-[30%] -right-[4%]"
+              >
+                <img
+                  class="w-full"
+                  src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65ea1ba6eb9637155282b42f_Lightning.png"
+                  alt=""
+                />
+              </div>
             </div>
             <div
-            class="img h-[40vh] w-[40vh] rounded-full bg-black absolute -right-[5%] -top-[5%] overflow-hidden"
-          >
-            <img
-              src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9efa87b272d53118849fa_9.jpg"
-              alt=""
-            />
-          </div>
-          <div
-          class="img h-[40vh] w-[40vh] rounded-full bg-black absolute left-[10%] -bottom-[25%] overflow-hidden"
-        >
-          <img
-            src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ef723a7cfee7941b52f3_6.jpg"
-            alt=""
-          />
-        </div>
-        <div
-        class="img h-[10vh] w-[10vh] rounded-full bg-black absolute right-[25%] bottom-[20%] overflow-hidden z-10"
-      >
-        <img
-          src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ef9463d57ead8406a444_8.jpg"
-          alt=""
-        />
-      </div>
+              class="slide h-screen w-[100vw] flex justify-center items-center relative overflow-hidden"
+            >
+              <div class="text flex flex-col items-center text-center">
+                <h1
+                  class="font-['pp_neue_machina'] font-bold text-white text-[10rem]"
+                >
+                  13
+                </h1>
+                <h1
+                  class="text-5xl font-['pp_neue_machina'] font-bold -mt-[3rem]"
+                >
+                  Nationalities Represented on Our <br />
+                  Team.
+                </h1>
+              </div>
+              <div
+                class="img h-[25vh] w-[25vh] rounded-full bg-black absolute left-[20%] -top-[4%] overflow-hidden"
+              >
+                <img
+                  src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ef82bb0daca6843ce305_7.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="img h-[40vh] w-[40vh] rounded-full bg-black absolute -right-[5%] -top-[5%] overflow-hidden"
+              >
+                <img
+                  src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9efa87b272d53118849fa_9.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="img h-[40vh] w-[40vh] rounded-full bg-black absolute left-[10%] -bottom-[25%] overflow-hidden"
+              >
+                <img
+                  src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ef723a7cfee7941b52f3_6.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="img h-[10vh] w-[10vh] rounded-full bg-black absolute right-[25%] bottom-[20%] overflow-hidden z-10"
+              >
+                <img
+                  src="https://assets-global.website-files.com/659dbdfd5a080be8d3483164/65e9ef9463d57ead8406a444_8.jpg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="team section min-h-screen w-full relative pb-[10rem]">
-        <h1 class="capitalize text-7xl font-['pp_neue_machina']  absolute left-[50%] -translate-x-[50%]">our team</h1>
+        <h1
+          class="capitalize text-7xl font-['pp_neue_machina'] absolute left-[50%] -translate-x-[50%]"
+        >
+          our team
+        </h1>
 
         <div class="members flex flex-col items-center pt-[12rem] px-[3rem]">
-
-          <div class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center"
+          >
             <h1 class="text-5xl font-['pp_neue_machina'] text-gray-300">01</h1>
             <div class="inner w-full flex justify-between items-center">
-              <h1 class="text-6xl capitalize font-['pp_neue_machina']">dr. ric mccartney</h1>
-              <h6 class="text-xl font-medium font-['satoshi_variable'] uppercase ">ceo</h6>
+              <h1 class="text-6xl capitalize font-['pp_neue_machina']">
+                dr. ric mccartney
+              </h1>
+              <h6
+                class="text-xl font-medium font-['satoshi_variable'] uppercase"
+              >
+                ceo
+              </h6>
             </div>
           </div>
-          <div class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center"
+          >
             <h1 class="text-5xl font-['pp_neue_machina'] text-gray-300">02</h1>
             <div class="inner w-full flex justify-between items-center">
-              <h1 class="text-6xl capitalize font-['pp_neue_machina']">chris koha</h1>
-              <h6 class="text-xl font-medium font-['satoshi_variable'] uppercase ">coo</h6>
+              <h1 class="text-6xl capitalize font-['pp_neue_machina']">
+                chris koha
+              </h1>
+              <h6
+                class="text-xl font-medium font-['satoshi_variable'] uppercase"
+              >
+                coo
+              </h6>
             </div>
           </div>
-          <div class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center"
+          >
             <h1 class="text-5xl font-['pp_neue_machina'] text-gray-300">03</h1>
             <div class="inner w-full flex justify-between items-center">
-              <h1 class="text-6xl capitalize font-['pp_neue_machina']">dr. jana hapfelmeier</h1>
-              <h6 class="text-xl font-medium font-['satoshi_variable'] capitalize ">chief innovation officer</h6>
+              <h1 class="text-6xl capitalize font-['pp_neue_machina']">
+                dr. jana hapfelmeier
+              </h1>
+              <h6
+                class="text-xl font-medium font-['satoshi_variable'] capitalize"
+              >
+                chief innovation officer
+              </h6>
             </div>
           </div>
-          <div class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center"
+          >
             <h1 class="text-5xl font-['pp_neue_machina'] text-gray-300">04</h1>
             <div class="inner w-full flex justify-between items-center">
-              <h1 class="text-6xl capitalize font-['pp_neue_machina']">caroline neito</h1>
-              <h6 class="text-xl font-medium font-['satoshi_variable'] capitalize ">chief product officer</h6>
+              <h1 class="text-6xl capitalize font-['pp_neue_machina']">
+                caroline neito
+              </h1>
+              <h6
+                class="text-xl font-medium font-['satoshi_variable'] capitalize"
+              >
+                chief product officer
+              </h6>
             </div>
           </div>
-          <div class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center"
+          >
             <h1 class="text-5xl font-['pp_neue_machina'] text-gray-300">05</h1>
             <div class="inner w-full flex justify-between items-center">
-              <h1 class="text-6xl capitalize font-['pp_neue_machina']">victor albertos</h1>
-              <h6 class="text-xl font-medium font-['satoshi_variable'] uppercase ">cto</h6>
+              <h1 class="text-6xl capitalize font-['pp_neue_machina']">
+                victor albertos
+              </h1>
+              <h6
+                class="text-xl font-medium font-['satoshi_variable'] uppercase"
+              >
+                cto
+              </h6>
             </div>
           </div>
-          <div class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center"
+          >
             <h1 class="text-5xl font-['pp_neue_machina'] text-gray-300">06</h1>
             <div class="inner w-full flex justify-between items-center">
-              <h1 class="text-6xl capitalize font-['pp_neue_machina']">michael robin</h1>
-              <h6 class="text-xl font-medium font-['satoshi_variable'] capitalize ">vP of marketing</h6>
+              <h1 class="text-6xl capitalize font-['pp_neue_machina']">
+                michael robin
+              </h1>
+              <h6
+                class="text-xl font-medium font-['satoshi_variable'] capitalize"
+              >
+                vP of marketing
+              </h6>
             </div>
           </div>
-          <div class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center"
+          >
             <h1 class="text-5xl font-['pp_neue_machina'] text-gray-300">07</h1>
             <div class="inner items-center w-full flex justify-between">
-              <h1 class="text-6xl capitalize font-['pp_neue_machina']">adrin rubio</h1>
-              <h6 class="text-xl font-medium font-['satoshi_variable'] capitalize">vP of engineering</h6>
+              <h1 class="text-6xl capitalize font-['pp_neue_machina']">
+                adrin rubio
+              </h1>
+              <h6
+                class="text-xl font-medium font-['satoshi_variable'] capitalize"
+              >
+                vP of engineering
+              </h6>
             </div>
           </div>
-          <div class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center"
+          >
             <h1 class="text-5xl font-['pp_neue_machina'] text-gray-300">08</h1>
             <div class="inner items-center w-full flex justify-between">
-              <h1 class="text-6xl capitalize font-['pp_neue_machina']">cy serrano</h1>
-              <h6 class="text-xl font-medium font-['satoshi_variable'] capitalize">vP of product</h6>
+              <h1 class="text-6xl capitalize font-['pp_neue_machina']">
+                cy serrano
+              </h1>
+              <h6
+                class="text-xl font-medium font-['satoshi_variable'] capitalize"
+              >
+                vP of product
+              </h6>
             </div>
           </div>
-          <div class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center ">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-black border-transparent px-10 flex gap-20 items-center"
+          >
             <h1 class="text-5xl font-['pp_neue_machina'] text-gray-300">09</h1>
             <div class="inner items-center w-full flex justify-between">
-              <h1 class="text-6xl capitalize font-['pp_neue_machina']">lenya mcgrath</h1>
-              <h6 class="text-xl font-medium font-['satoshi_variable'] capitalize">vP of partnerships</h6>
+              <h1 class="text-6xl capitalize font-['pp_neue_machina']">
+                lenya mcgrath
+              </h1>
+              <h6
+                class="text-xl font-medium font-['satoshi_variable'] capitalize"
+              >
+                vP of partnerships
+              </h6>
             </div>
           </div>
-
         </div>
-        <div class="w-fit px-14 py-4 border-[1px] border-[--black] absolute bottom-[0%] left-1/2 -translate-x-1/2 bg-[#F4F19C] ">
+        <div
+          class="w-fit px-14 py-4 border-[1px] border-[--black] absolute bottom-[0%] left-1/2 -translate-x-1/2 bg-[#F4F19C]"
+        >
           <span class="text-lg uppercase font-['Satoshi_Variable']"
             >Partner With Us</span
           >
@@ -649,77 +773,115 @@
       </section>
 
       <section class="para min-h-screen w-full relative pt-[20rem]">
-        <div class="text w-1/2 px-[5.5rem] flex flex-col items-center gap-20 ">
+        <div class="text w-1/2 px-[5.5rem] flex flex-col items-center gap-20">
           <div class="line h-[1.5px] w-[10vw] bg-gray-300"></div>
-          <h3 class="text-[1.8rem] font-['satoshi_variable'] font-medium text-[#2544EE] text-center leading-relaxed">Working with the Significo team has been such
-            a pleasure! We took on a significant project to
-            rebuild our entire platform and the team
-            approached the project with our best interests <br>
-            in mind. They continue to prioritize the end
-            user experience and offer amazing expertise in
-            all of the areas we lack internally. I would
-            personally be lost without this team, their
-            ability to problem solve, their openness to
-            feedback and desire to build the product like it <br>
-            is their own.</h3>
-            <div class="profile  w-full px-[5.5rem] flex flex-col items-center gap-4 -mt-[2rem]">
-              <div class="img h-[10vh] w-[10vh] rounded-full  overflow-hidden">
-                <img src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/659dbdfd5a080be8d34832e5_MirandaErnst.jpeg" alt="">
-              </div>
-              <h4 class="text-3xl font-['satoshi_variable'] font-medium">Miranda Ernst</h4>
-              <h6 class="text-xl font-['satoshi_variable'] text-gray-500 font-medium">Product Manager
-                @ 
-               HealthCheck360</h6>
+          <h3
+            class="text-[1.8rem] font-['satoshi_variable'] font-medium text-[#2544EE] text-center leading-relaxed"
+          >
+            Working with the Significo team has been such a pleasure! We took on
+            a significant project to rebuild our entire platform and the team
+            approached the project with our best interests <br />
+            in mind. They continue to prioritize the end user experience and
+            offer amazing expertise in all of the areas we lack internally. I
+            would personally be lost without this team, their ability to problem
+            solve, their openness to feedback and desire to build the product
+            like it <br />
+            is their own.
+          </h3>
+          <div
+            class="profile w-full px-[5.5rem] flex flex-col items-center gap-4 -mt-[2rem]"
+          >
+            <div class="img h-[10vh] w-[10vh] rounded-full overflow-hidden">
+              <img
+                src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/659dbdfd5a080be8d34832e5_MirandaErnst.jpeg"
+                alt=""
+              />
             </div>
+            <h4 class="text-3xl font-['satoshi_variable'] font-medium">
+              Miranda Ernst
+            </h4>
+            <h6
+              class="text-xl font-['satoshi_variable'] text-gray-500 font-medium"
+            >
+              Product Manager @ HealthCheck360
+            </h6>
+          </div>
         </div>
 
-        <div class="text w-1/2 px-[5.5rem] flex flex-col items-center gap-20 ml-[50%]">
+        <div
+          class="text w-1/2 px-[5.5rem] flex flex-col items-center gap-20 ml-[50%]"
+        >
           <div class="line h-[1.5px] w-[10vw] bg-gray-300"></div>
-          <h3 class="text-[1.8rem] font-['satoshi_variable'] font-medium text-[#2544EE] text-center leading-relaxed">Working with Significo and their
-            recommendation service has been a
-            game-changer for our occupational
-            prevention efforts. Our customers are
-            extremely satisfied with the tool's impressive
-            technical capabilities and data-driven
-            approach. But what truly sets it apart is the
-            intuitive and modern user experience it offers,
-            making it a breeze for our clients to navigate.
-            By leveraging this service, our customers have
-            successfully tackled presenteeism and
-            absenteeism, making a significant impact on
-            their workforce's well-being. We highly
-            recommend Significo to any organization
-            looking to optimize their occupational health
-            and drive positive change.</h3>
-            <div class="profile  w-full px-[5.5rem] flex flex-col items-center gap-4 -mt-[2rem]">
-              <div class="img h-[10vh] w-[10vh] rounded-full  overflow-hidden">
-                <img src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/659dbdfd5a080be8d3483253_EmekAltun.jpg" alt="">
-              </div>
-              <h4 class="text-3xl font-['satoshi_variable'] font-medium">Emek Altun</h4>
-              <h6 class="text-xl font-['satoshi_variable'] text-gray-500 font-medium">CEO
-                @ 
-               Vitaservices</h6>
+          <h3
+            class="text-[1.8rem] font-['satoshi_variable'] font-medium text-[#2544EE] text-center leading-relaxed"
+          >
+            Working with Significo and their recommendation service has been a
+            game-changer for our occupational prevention efforts. Our customers
+            are extremely satisfied with the tool's impressive technical
+            capabilities and data-driven approach. But what truly sets it apart
+            is the intuitive and modern user experience it offers, making it a
+            breeze for our clients to navigate. By leveraging this service, our
+            customers have successfully tackled presenteeism and absenteeism,
+            making a significant impact on their workforce's well-being. We
+            highly recommend Significo to any organization looking to optimize
+            their occupational health and drive positive change.
+          </h3>
+          <div
+            class="profile w-full px-[5.5rem] flex flex-col items-center gap-4 -mt-[2rem]"
+          >
+            <div class="img h-[10vh] w-[10vh] rounded-full overflow-hidden">
+              <img
+                src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/659dbdfd5a080be8d3483253_EmekAltun.jpg"
+                alt=""
+              />
             </div>
+            <h4 class="text-3xl font-['satoshi_variable'] font-medium">
+              Emek Altun
+            </h4>
+            <h6
+              class="text-xl font-['satoshi_variable'] text-gray-500 font-medium"
+            >
+              CEO @ Vitaservices
+            </h6>
+          </div>
         </div>
-       
       </section>
 
-      <section class="meet min-h-screen w-full relative ">
-        <div class="text section pt-[30rem] ml-[3rem] w-1/2 flex flex-col gap-10">
-          <h6 class="text-[--cyan] text-xl font-['satoshi_variable'] ">Meet our lively mix of healthcare buffs, tech nerds, and creative sparks. Fancy a <br>
-            chat? Check our travel log and let's rendezvous for some genuine banter and <br>
-            brainstorming.</h6>
-          <h1 class="text-[--cyan] font-['pp_neue_machina'] text-7xl">Meet Us in the Wild</h1>
+      <section class="meet min-h-screen w-full relative">
+        <div
+          class="text section pt-[30rem] ml-[3rem] w-1/2 flex flex-col gap-10"
+        >
+          <h6 class="text-[--cyan] text-xl font-['satoshi_variable']">
+            Meet our lively mix of healthcare buffs, tech nerds, and creative
+            sparks. Fancy a <br />
+            chat? Check our travel log and let's rendezvous for some genuine
+            banter and <br />
+            brainstorming.
+          </h6>
+          <h1 class="text-[--cyan] font-['pp_neue_machina'] text-7xl">
+            Meet Us in the Wild
+          </h1>
         </div>
         <div class="cont px-[3rem] pt-[5rem] text-[--cyan] relative">
-          <div class="containers h-[15vh] w-full border-[1px] border-b-[--cyan] border-transparent px-10 flex gap-[5rem] items-center relative">
-            <div class="img h-[10vh] w-[10vh] bg-white rounded-full overflow-hidden">
-              <img src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65ea25fe9bc033723bc808e2_Multi%20-%20Option%202.png" alt="">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-[--cyan] border-transparent px-10 flex gap-[5rem] items-center relative"
+          >
+            <div
+              class="img h-[10vh] w-[10vh] bg-white rounded-full overflow-hidden"
+            >
+              <img
+                src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65ea25fe9bc033723bc808e2_Multi%20-%20Option%202.png"
+                alt=""
+              />
             </div>
-              <h1 class="text-3xl capitalize font-['pp_neue_machina'] mr-[6rem]">team</h1>
+            <h1 class="text-3xl capitalize font-['pp_neue_machina'] mr-[6rem]">
+              team
+            </h1>
             <div class="flex justify-between w-2/3">
-              <div class="inner flex flex-col font-['pp_neue_machina'] ml-[rem]">
-                <h5 class="capitalize text-2xl ">travelling to</h5>
+              <div
+                class="inner flex flex-col font-['pp_neue_machina'] ml-[rem]"
+              >
+                <h5 class="capitalize text-2xl">travelling to</h5>
                 <h6 class="uppercase text-2xl">sxsw</h6>
               </div>
               <div class="inner flex flex-col font-['pp_neue_machina']">
@@ -727,89 +889,128 @@
                 <h6 class="uppercase text-2xl">view map</h6>
               </div>
             </div>
-              
-            
           </div>
-          <div class="containers h-[15vh] w-full border-[1px] border-b-[--cyan] border-transparent px-10 flex gap-[5rem] items-center">
-            <div class="img h-[10vh] w-[10vh] bg-white rounded-full overflow-hidden">
-              <img src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/659dbdfd5a080be8d34832cf_Fenn.png" alt="">
+          <div
+            class="containers h-[15vh] w-full border-[1px] border-b-[--cyan] border-transparent px-10 flex gap-[5rem] items-center"
+          >
+            <div
+              class="img h-[10vh] w-[10vh] bg-white rounded-full overflow-hidden"
+            >
+              <img
+                src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/659dbdfd5a080be8d34832cf_Fenn.png"
+                alt=""
+              />
             </div>
             <div class="inner">
-              <h1 class="text-3xl capitalize font-['pp_neue_machina']">fenn g</h1>
-              <h6 class="capitalize text-cyan-100 text-2xl font-thin">product manager</h6>
+              <h1 class="text-3xl capitalize font-['pp_neue_machina']">
+                fenn g
+              </h1>
+              <h6 class="capitalize text-cyan-100 text-2xl font-thin">
+                product manager
+              </h6>
             </div>
-           <div class="flex justify-between w-2/3">
-            <div class="inner flex flex-col font-['pp_neue_machina']">
-              <h5 class="capitalize text-2xl">travelling to</h5>
-              <h6 class="uppercase text-2xl">austin, texas</h6>
+            <div class="flex justify-between w-2/3">
+              <div class="inner flex flex-col font-['pp_neue_machina']">
+                <h5 class="capitalize text-2xl">travelling to</h5>
+                <h6 class="uppercase text-2xl">austin, texas</h6>
+              </div>
+              <div class="inner flex flex-col font-['pp_neue_machina']">
+                <h1 class="capitalize text-2xl">mar 16</h1>
+                <h6 class="uppercase text-2xl">view map</h6>
+              </div>
             </div>
-            <div class="inner flex flex-col font-['pp_neue_machina']">
-              <h1 class="capitalize text-2xl">mar 16</h1>
-              <h6 class="uppercase text-2xl">view map</h6>
-            </div>
-           </div>
-          
           </div>
         </div>
       </section>
 
-      <section class="capsules mt-[30rem] min-h-screen w-full relative py-10 pl-[5rem] flex ">
-      <div class="left w-1/3 h-full">
-        <div class="text flex flex-col justify-between h-[80vh] w-1/2 font-['pp_neue_machina'] ">
-          <h6 class="text-2xl font-['satoshi_variable']">Stay up-to-date on the <br>
-            latest healthcare <br>
-            innovations and thought <br>
-            leadership.</h6>
-            <h1 class="text-8xl">Explore
-              Our Insights</h1>
-        </div>
-        <div class="w-fit px-14 py-4 border-[1px] border-[--black]   bg-[#F4F19C] mt-[3rem]">
-          <span class="text-lg uppercase font-['Satoshi_Variable'] font-semibold"
-            >view all articles</span
+      <section
+        class="capsules mt-[30rem] min-h-screen w-full relative py-10 pl-[5rem] flex"
+      >
+        <div class="left w-1/3 h-full">
+          <div
+            class="text flex flex-col justify-between h-[80vh] w-1/2 font-['pp_neue_machina']"
           >
-        </div>
-      </div>
-      <div class="right h-[100vh] w-2/3  flex px-[5rem] gap-14">
-        <div class="capsule border-[1px] border-black w-[25vw] rounded-full h-full flex flex-col items-center gap-[5rem] py-[3rem] -rotate-[16deg]">
-          <div class="img w-[20vw] h-[20vw]  rounded-full overflow-hidden ">
-            <img class="h-full w-full object-cover object-center" src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65e61826ab9558e05e681a7f_Untitled%20design.png" alt="">
+            <h6 class="text-2xl font-['satoshi_variable']">
+              Stay up-to-date on the <br />
+              latest healthcare <br />
+              innovations and thought <br />
+              leadership.
+            </h6>
+            <h1 class="text-8xl">Explore Our Insights</h1>
           </div>
-          <div class="text text-center font-['pp_neue_machina']">
-            <h1 class="text-3xl capitalize">equity in tech: an</h1>
-            <h1 class="text-3xl capitalize">international women's</h1>
-            <h1 class="text-3xl capitalize">day conversation with</h1>
-            <h1 class="text-3xl capitalize">caroline neito,</h1>
-            <h1 class="text-3xl capitalize">significo's cpo</h1>
-          </div>
-          <div class="w-fit px-12 py-3 rounded-full   bg-[#E9BBFE] mt-[3rem]">
-            <span class="text-sm capitalize font-['pp_neue_machina'] font-semibold"
-              >thought of leadership</span
+          <div
+            class="w-fit px-14 py-4 border-[1px] border-[--black] bg-[#F4F19C] mt-[3rem]"
+          >
+            <span
+              class="text-lg uppercase font-['Satoshi_Variable'] font-semibold"
+              >view all articles</span
             >
           </div>
+        </div>
+        <div class="right h-[100vh] w-2/3 flex px-[5rem] gap-14">
+          <div
+            class="capsule border-[1px] border-black w-[25vw] rounded-full h-full flex flex-col items-center gap-[5rem] py-[3rem] -rotate-[16deg]"
+          >
+            <div class="img w-[20vw] h-[20vw] rounded-full overflow-hidden">
+              <img
+                class="h-full w-full object-cover object-center"
+                src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65e61826ab9558e05e681a7f_Untitled%20design.png"
+                alt=""
+              />
+            </div>
+            <div class="text text-center font-['pp_neue_machina']">
+              <h1 class="text-3xl capitalize">equity in tech: an</h1>
+              <h1 class="text-3xl capitalize">international women's</h1>
+              <h1 class="text-3xl capitalize">day conversation with</h1>
+              <h1 class="text-3xl capitalize">caroline neito,</h1>
+              <h1 class="text-3xl capitalize">significo's cpo</h1>
+            </div>
+            <div class="w-fit px-12 py-3 rounded-full bg-[#E9BBFE] mt-[3rem]">
+              <span
+                class="text-sm capitalize font-['pp_neue_machina'] font-semibold"
+                >thought of leadership</span
+              >
+            </div>
+          </div>
+          <div
+            class="capsule border-[1px] border-black w-[25vw] rounded-full h-full flex flex-col items-center gap-[5rem] py-[5rem] -rotate-[16deg]"
+          >
+            <div class="w-fit px-12 py-3 rounded-full bg-[#E9BBFE] mt-[3rem]">
+              <span
+                class="text-sm capitalize font-['Satoshi_Variable' font-semibold font-['pp_neue_machina']"
+                >thought of leadership</span
+              >
+            </div>
+            <div class="text text-center font-['pp_neue_machina']">
+              <h1 class="text-3xl capitalize">how to use digital</h1>
+              <h1 class="text-3xl capitalize">health interventions</h1>
+              <h1 class="text-3xl capitalize">to align employee &</h1>
+              <h1 class="text-3xl capitalize">organizational goals</h1>
+            </div>
 
-        </div>
-        <div class="capsule border-[1px] border-black w-[25vw] rounded-full h-full flex flex-col items-center gap-[5rem] py-[5rem] -rotate-[16deg]">
-          <div class="w-fit px-12 py-3 rounded-full   bg-[#E9BBFE] mt-[3rem] ">
-            <span class="text-sm capitalize font-['Satoshi_Variable' font-semibold font-['pp_neue_machina']"
-              >thought of leadership</span
-            >
-          </div>
-          <div class="text text-center font-['pp_neue_machina']">
-            <h1 class="text-3xl capitalize">how to use digital</h1>
-            <h1 class="text-3xl capitalize">health interventions</h1>
-            <h1 class="text-3xl capitalize">to align employee &</h1>
-            <h1 class="text-3xl capitalize">organizational goals</h1>
-          </div>
-         
-          <div class="img w-[20vw] h-[20vw] rounded-full overflow-hidden ">
-            <img class="h-full w-full object-cover object-center" src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65affe89f470b736a1da1ba2_How%20to%20Use%20Digital%20Health%20Interventions.jpg" alt="">
+            <div class="img w-[20vw] h-[20vw] rounded-full overflow-hidden">
+              <img
+                class="h-full w-full object-cover object-center"
+                src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65affe89f470b736a1da1ba2_How%20to%20Use%20Digital%20Health%20Interventions.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-      </div>
-        
       </section>
     </main>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
- </body>
+  </body>
 </html>

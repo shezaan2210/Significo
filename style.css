@@ -10,6 +10,9 @@
     --salmon: #EE9D71;
     --machina: 'Pp_Neue_Machina';
 }
+.videocontainer{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
 
 *{
 margin: 0;
