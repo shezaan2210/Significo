@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* <!-- <h1 class="text-3xl font-thin font-['Satoshi_Variable']">Crafting a new paradigm of healthcare, one that is</h1> --> */
 :root{
     --black: #000;
     --white: #fff;
